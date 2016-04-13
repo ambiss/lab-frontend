@@ -1,0 +1,46 @@
+body {
+    font-family: Helvetica, sans-serif;
+}
+
+#page {
+    width: 55%; /* contexto simula 700px */
+    border: 1px solid red;
+    margin: 0 auto 0;
+}
+
+#page .menu ul li {
+    display: inline-block;
+    width: 17.142857143%; /* alvo vale 120px */
+    margin-left: 1.4285%; /* alvo vale 10px */
+}
+
+.menu ul li a {
+    color: #fff;
+    padding: 16.6666%; /* alvo vale 20px */
+    background-color: #333;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    color: #333;
+    background-color: orange;
+}
+
+.middle > div{
+    background: #999;
+    
+    display: inline-block;
+    
+    margin-top: 50px;
+    
+    width: 28.5714%; /* alvo vale 200px */
+    height: 120px;
+}
+
+.footer {
+    color: #fff;
+    height: 50px;
+    width: 71.4285%; /* alvo vale 500px */
+    margin: 0 auto 0;
+    background-color: #010101;
+}

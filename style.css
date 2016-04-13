@@ -1,0 +1,61 @@
+
+body > *{
+    /*border: 1px solid purple;  */ 
+    font-family: 'Roboto', sans-serif;
+    
+    width: 70%; /* context main 1280 */
+    margin: 0 auto 0;
+    
+    background-color: #f2f2f2;
+}
+
+body > span {
+    border-color: orange;
+}
+
+#page > div {
+    display: block;
+    margin: 20px;
+    padding: 20px; 
+    background-color: #ccc;
+}
+
+#page > div:first-child {
+    /*background-color: orange;*/
+}
+#page > div:nth-child(odd) {
+    /*background-color: blue;*/
+}
+#page > div:last-child {
+    /*background-color: #333;*/
+}
+
+#page > div:nth-child(3) {
+    background: black;
+    color: white;
+    height: 400px;
+    font-size: 0;
+}
+
+#page > div:nth-child(3):before {
+    content: url(c6.svg);
+    display: block;
+    
+    width: 30px !important;
+    height: 30px !important;
+}
+#page > div:nth-child(3):after {
+    content: ' - 10% de desconto nas compras à vista';
+    display: block;
+    font-size: 14px;
+}
+
+#page a[href*="duster"] {
+    color: orange;
+    font-size: 40px;
+    display: none;
+}
+#page a[href*="duster"]:before {
+    content: 'Nao estamos vendendo ainda, mas trabalhamos caom a marca';
+    font-size: 0;
+}
