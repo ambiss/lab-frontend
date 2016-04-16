@@ -1,0 +1,65 @@
+@require reuse;
+
+#page 
+    width 70%
+    margin 0 auto 0
+    
+    h2 
+        font-family Helvetica, Arial, sans-serif
+        
+    .menu 
+        list-style none
+        
+        li 
+            display inline-block
+            vertical-align middle
+            
+            a
+                font-size 1.125rem
+                font-family Helvetica
+                color rgba(198, 0, 1, 1)
+                text-decoration none
+        
+    section
+        width 100%
+        > div
+            display inline-block
+            vertical-align top
+            width 25%
+            font-family Helvetica, Arial, sans-serif
+            
+            position relative
+            
+            span
+                display block
+                padding 10px 0 0
+                color cor-de
+                t(oferta)
+                t(uppercase)
+            
+            b 
+                display block
+                color cor-preco
+                
+            &:hover 
+                .subnivel
+                    display block
+                
+            .subnivel
+                width 90%
+                background rgba(170, 170, 170, 1)
+                padding 10px
+                position relative
+                margin-top 40px
+                display none
+                
+                &:before
+                    content ''
+                    position absolute
+                    top -6px
+                                        
+                    arrow(rgba(170, 170, 170, 1))
+                
+                    
+
+                

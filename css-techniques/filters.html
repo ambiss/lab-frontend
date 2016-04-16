@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <style>
+        
+        figure {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0 1px 10px;
+            padding: 0;
+        }
+        
+        .blur img {
+             -webkit-filter: blur(10px);
+             filter: blur(10px);
+        }
+        .brightness img {
+            -webkit-filter: brightness(140%);
+            filter: brightness(140%);
+        }
+        .contrast img {
+            -webkit-filter: contrast(160%);
+            filter: contrast(160%);
+        }
+        .grayscale img {
+            -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+        }
+        .hue-rotate img {
+            -webkit-filter: hue-rotate(120deg);
+            filter: hue-rotate(120deg);
+        }
+        .invert img {
+            -webkit-filter: invert();
+            filter: invert();
+        }
+        .opacity img {
+            -webkit-filter: opacity(.5);
+            filter: opacity(.5);
+        }
+        .saturation img {
+            -webkit-filter: saturate(250%);
+            filter: saturate(250%);
+        }
+        .sepia img {
+            -webkit-filter: sepia(1);
+            filter: sepia(1);
+        }
+        .drop-shadow img {
+            -webkit-filter: drop-shadow(10px 10px 3px #bbb);
+            filter: drop-shadow(10px 10px 3px #bbb);
+        }
+        .url img {
+            -webkit-filter: url(#createFilter);
+            filter: url(#createFilter);
+        }
+        
+    </style>
+    
+    <div id="page">
+        <figure>
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Image Without Filter</figcaption>
+        </figure>
+        <figure class="blur">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Blur</figcaption>
+        </figure>
+        <figure class="brightness">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Brightness</figcaption>
+        </figure>
+        <figure class="contrast">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Contrast</figcaption>
+        </figure>
+        <figure class="grayscale">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Grayscale</figcaption>
+        </figure>
+        <figure class="hue-rotate" >
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Hue-Rotate</figcaption>
+        </figure>
+        <figure class="invert">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Invert</figcaption>
+        </figure>
+        <figure class="opacity">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Opacity</figcaption>
+        </figure>
+        <figure class="saturation">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Saturation</figcaption>
+        </figure>
+        <figure class="sepia">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Sepia</figcaption>
+        </figure>
+        <figure class="url">
+            <img src="http://lorempixel.com/400/300/animals/" alt="animals">
+            <figcaption>Filter: Url</figcaption>
+        </figure>
+        <figure class="drop-shadow">
+            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/9674/Star.png" alt="Star">
+            <figcaption>Filter: Drop Shadow</figcaption>
+        </figure>
+        
+        
+        <!-- Custom Filter by URL -->
+        <svg height="0" xmlns="http://www.w3.org/2000/svg">
+          <filter id="createFilter" x="-5%" y="-5%" width="110%" height="110%">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="8"/>
+          </filter>
+        </svg>
+    </div>
+</html>

@@ -1,0 +1,61 @@
+#page {
+  width: 70%;
+  margin: 0 auto 0;
+}
+#page h2 {
+  font-family: Helvetica, Arial, sans-serif;
+}
+#page .menu {
+  list-style: none;
+}
+#page .menu li {
+  display: inline-block;
+  vertical-align: middle;
+}
+#page .menu li a {
+  font-size: 1.125rem;
+  font-family: Helvetica;
+  color: #c60001;
+  text-decoration: none;
+}
+#page section {
+  width: 100%;
+}
+#page section > div {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+  font-family: Helvetica, Arial, sans-serif;
+  position: relative;
+}
+#page section > div span {
+  display: block;
+  padding: 10px 0 0;
+  color: #2d4ecd;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+#page section > div b {
+  display: block;
+  color: #008000;
+}
+#page section > div:hover .subnivel {
+  display: block;
+}
+#page section > div .subnivel {
+  width: 90%;
+  background: #aaa;
+  padding: 10px;
+  position: relative;
+  margin-top: 40px;
+  display: none;
+}
+#page section > div .subnivel:before {
+  content: '';
+  position: absolute;
+  top: -6px;
+  content: '';
+  border-bottom: 8px solid #aaa;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+}
