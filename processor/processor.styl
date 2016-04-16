@@ -23,12 +23,12 @@
     section
         width 100%
         > div
-            display inline-block
-            vertical-align top
-            width 25%
+            
             font-family Helvetica, Arial, sans-serif
             
             position relative
+            
+            cursor('mao')
             
             span
                 display block
@@ -43,22 +43,33 @@
                 
             &:hover 
                 .subnivel
-                    display block
+                    opacity 1
+                    visibility visible
                 
             .subnivel
-                width 90%
                 background rgba(170, 170, 170, 1)
-                padding 10px
-                position relative
+                border-radius 6px 
+                
+                width 90%
+                
                 margin-top 40px
-                display none
+                padding 10px
+                
+                position absolute
+                top 100%
+                left 0
+                
+                opacity 0
+                visibility hidden
+
+                transition(all, .8s)                
                 
                 &:before
                     content ''
                     position absolute
-                    top -6px
+                    top -8px
                                         
-                    arrow(rgba(170, 170, 170, 1))
+                    arrow(rgba(170, 170, 170, 1), 9px)
                 
                     
 

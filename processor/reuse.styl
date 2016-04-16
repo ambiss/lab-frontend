@@ -92,3 +92,19 @@ arrow(color=#333, size=8px, dir=bottom, content=false)
         border-bottom size solid transparent
     
     
+//mixin transparent
+border-radius()
+  -webkit-border-radius arguments
+  -moz-border-radius arguments
+  border-radius arguments
+  
+cursor(type=default)
+    if type == 'mao' or type == hand or type == pointer or 'maozinha'
+        cursor pointer
+
+transition(property=all, duration=0.3s, effect=ease-in-out)
+	-webkit-transition property duration effect
+	-moz-transition property duration effect
+	-ms-transition property duration effect
+    transition property duration effect
+    
