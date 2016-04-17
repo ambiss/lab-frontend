@@ -6,13 +6,36 @@
     
     h2 
         font-family Helvetica, Arial, sans-serif
+
+        
+    input[type="checkbox"]:checked ~ .menu
+        
+        display block
+        padding 20px
+    
+    .acesso-menu
+        display none
+        
+    @media screen and (max-width: 500px)
+        .acesso-menu
+            display block
+            
+            svg
+                width 80px
+                height 30px
+        
+        .menu
+            display none
+    
         
     .menu 
         list-style none
+        margin-bottom 39px
         
         li 
             display inline-block
             vertical-align middle
+            padding 10px
             
             a
                 font-size 1.125rem
@@ -29,6 +52,8 @@
             position relative
             
             cursor('mao')
+            
+            margin-bottom 30px
             
             span
                 display block
@@ -70,6 +95,8 @@
                     top -8px
                                         
                     arrow(rgba(170, 170, 170, 1), 9px)
+                    
+    
                 
                     
 
